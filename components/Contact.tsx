@@ -20,7 +20,7 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
+    console.log('Form submitted:', formData);
     alert('¡Gracias por tu mensaje! Me pondré en contacto pronto.')
     setFormData({ name: '', email: '', message: '' })
   }
