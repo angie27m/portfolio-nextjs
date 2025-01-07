@@ -4,22 +4,16 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 const projects = [
   {
-    title: "E-commerce Platform",
-    description: "Una solución completa de comercio electrónico construida con React y Node.js",
+    title: "AquaFeeder: Sistema de Detección de Peces",
+    description: "Desarrollé un sistema inteligente utilizando webcam en tiempo real, MATLAB y Arduino para detectar especies de peces y predecir su longitud y porciones de alimento.",
     image: "/placeholder.svg?height=200&width=300",
-    link: "https://github.com"
+    link: "#"
   },
   {
-    title: "Task Management App",
-    description: "Una aplicación móvil React Native para gestionar tareas diarias",
+    title: "Brechas de Género en Carreras STEM",
+    description: "Publiqué artículo de investigación analizando las disparidades de género en la educación superior colombiana en las Pruebas Saber 2016.",
     image: "/placeholder.svg?height=200&width=300",
-    link: "https://github.com"
-  },
-  {
-    title: "Data Visualization Dashboard",
-    description: "Un dashboard interactivo construido con D3.js y React para análisis de datos",
-    image: "/placeholder.svg?height=200&width=300",
-    link: "https://github.com"
+    link: "https://revistas.ucundinamarca.edu.co/index.php/Pensamiento_udecino/article/view/79"
   }
 ]
 

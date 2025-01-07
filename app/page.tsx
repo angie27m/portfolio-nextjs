@@ -19,7 +19,6 @@ export default function Home() {
         <div className="relative">
           <Header />
           <Hero />
-          <Logos />
           <About />
           <Projects />
           <Skills />
