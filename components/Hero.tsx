@@ -6,18 +6,11 @@ export default function Hero() {
     <section className="py-20 md:py-32">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="flex-1 text-center lg:text-left">
-            <div className="mb-6 inline-block">
-              <div className="flex items-center space-x-2 bg-gray-900/60 rounded-full px-4 py-2">
-                <span className="h-2 w-2 rounded-full bg-purple-500"></span>
-                <span className="text-gray-400">Disponible para trabajar</span>
-              </div>
-            </div>
-            
+          <div className="flex-1 text-center lg:text-left">            
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="block">Diseñador de Producto</span>
-              <span className="block text-purple-500">&</span>
-              <span className="block">Desarrollador Visual</span>
+              <span className="block">Desarrolladora </span>
+              <span className="block text-purple-500">de</span>
+              <span className="block">Software</span>
             </h1>
             
             <p className="text-gray-400 text-lg mb-8 max-w-2xl">
@@ -25,16 +18,17 @@ export default function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-              <div className="flex items-center space-x-8">
+              {/* Stats section */}
+              {/* <div className="flex items-center space-x-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-500">10</div>
+                  <div className="text-3xl font-bold text-purple-500">5</div>
                   <div className="text-gray-400">Años de Experiencia</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-purple-500">277</div>
                   <div className="text-gray-400">Proyectos Completados</div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           

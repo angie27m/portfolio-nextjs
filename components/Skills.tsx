@@ -1,5 +1,5 @@
 const skills = [
-  "JavaScript", "TypeScript", "React", "Node.js", "Express", "MongoDB",
+  "Java", "Spring Boot", "TypeScript", "Angular", "C#", ".NET", "SQL",
   "GraphQL", "Docker", "AWS", "Git", "Metodologías Ágiles", "Desarrollo TDD"
 ]
 
