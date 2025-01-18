@@ -8,8 +8,8 @@ export default function About() {
             <p className="text-lg mb-6 text-gray-300">
               ¡Hola! Soy Angie, una ingeniera de software con 5 años de experiencia en desarrollo de aplicaciones web. 
               Me especializo en Java, Spring Boot, Angular, y Typescript, y me apasiona crear soluciones eficientes y 
-              amigables para los usuarios. También cuento con experiencia con tecnologías en la nube como AWS y Azure,
-              actualmente estoy interesada en todo lo relacionado con Inteligencia Artifical Generativa.
+              amigables para los usuarios. También cuento con experiencia en tecnologías en la nube como AWS y Azure,
+              actualmente estoy interesada en aprender todo lo relacionado con Inteligencia Artifical Generativa.
             </p>
             <p className="text-lg mb-6 text-gray-300">
               Actualmente, trabajo como Senior Software Engineer en Allied Global, donde me desempeño como fullstack, 
@@ -17,8 +17,9 @@ export default function About() {
               con software de elecciones.
             </p>
             <p className="text-lg mb-6 text-gray-300">
-              En mi etapa en Crehana, estuve enfocada en recursos humanos, creando módulos innovadores en Java y Spring Framework, 
-              y funcionalidades interactivas en Angular con el objetivo de aumentar el engagement de usuarios.
+              En mi etapa en Crehana, estuve enfocada en el desarrollo de herramientas útiles para el área de
+              recursos humanos, creando módulos innovadores en Java y Spring Framework, 
+              y funcionalidades interactivas en Angular con el objetivo de aumentar el engagement de usuarios y automatizar procesos.
             </p>
             <p className="text-lg mb-6 text-gray-300">
               Fuera del trabajo, me encanta viajar por Colombia y el mundo, probablemente me encuentre explorando montañas, 

@@ -20,9 +20,12 @@ export default function Header() {
           <Link href="#skills" className="text-gray-300 hover:text-white transition-colors">
             Habilidades
           </Link>
-          <Button className="bg-purple-600 hover:bg-purple-700 text-white rounded-full px-6">
+          <Link href="#contact" className="text-gray-300 hover:text-white transition-colors">
             Contáctame
-          </Button>
+          </Link>
+          {/* <Button className="bg-purple-600 hover:bg-purple-700 text-white rounded-full px-6">
+            Contáctame
+          </Button> */}
         </div>
       </nav>
     </header>
