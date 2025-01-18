@@ -1,6 +1,6 @@
 const skills = [
   "Java", "Spring Boot", "TypeScript", "Angular", "C#", ".NET", "SQL",
-  "GraphQL", "Docker", "AWS", "Git", "Metodologías Ágiles", "Desarrollo TDD"
+  "GraphQL", "AWS", "Metodologías Ágiles", "Desarrollo TDD"
 ]
 
 export default function Skills() {

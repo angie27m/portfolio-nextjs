@@ -821,9 +821,6 @@ video {
 .block {
   display: block;
 }
-.inline-block {
-  display: inline-block;
-}
 .flex {
   display: flex;
 }
@@ -1400,9 +1397,6 @@ video {
 .bg-gray-900\/50 {
   background-color: rgb(17 24 39 / 0.5);
 }
-.bg-gray-900\/60 {
-  background-color: rgb(17 24 39 / 0.6);
-}
 .bg-muted {
   background-color: hsl(var(--muted));
 }
@@ -1414,10 +1408,6 @@ video {
 }
 .bg-primary {
   background-color: hsl(var(--primary));
-}
-.bg-purple-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(168 85 247 / var(--tw-bg-opacity, 1));
 }
 .bg-purple-500\/10 {
   background-color: rgb(168 85 247 / 0.1);

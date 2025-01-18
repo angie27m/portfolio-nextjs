@@ -14,7 +14,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-gray-400 text-lg mb-8 max-w-2xl">
-              Especializado en diseño centrado en el usuario, creando experiencias digitales intuitivas que fusionan estética con funcionalidad.
+              Especializada en el desarrollo backend con Java y en la creación y mantenimiento de aplicaciones web eficientes y escalables
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="flex-1 relative">
             <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px]">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/profile-picture.png"
                 alt="Perfil"
                 width={400}
                 height={400}
@@ -45,8 +45,7 @@ export default function Hero() {
               {/* Chat bubble decoration */}
               <div className="absolute -right-8 top-1/4 bg-gray-900 rounded-2xl p-4 shadow-lg">
                 <div className="flex items-center space-x-2">
-                  <MessageCircle className="text-purple-500" />
-                  <p className="text-sm">¡Creemos algo increíble juntos!</p>
+                  <p className="text-sm">👾🤖</p>
                 </div>
               </div>
               
