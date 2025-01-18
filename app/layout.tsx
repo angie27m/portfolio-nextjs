@@ -2,8 +2,15 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Angie Manrique | Software Engineer',
+  description: 'Portfolio personal de Angie Manrique, Ingeniera de Software con experiencia en desarrollo web fullstack',
+  icons: {
+    icon: [
+      { url: '/logo1.jpg', sizes: '16x16' },
+      { url: '/logo1.jpg', sizes: '32x32' },
+      { url: '/logo1.jpg', sizes: '48x48' },
+    ],
+  },
 }
 
 export default function RootLayout({
@@ -12,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body>{children}</body>
     </html>
   )

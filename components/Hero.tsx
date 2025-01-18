@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { MessageCircle } from 'lucide-react'
+import { MessageCircle, Github, Linkedin, Instagram, Twitter } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -18,17 +18,40 @@ export default function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-              {/* Stats section */}
-              {/* <div className="flex items-center space-x-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-500">5</div>
-                  <div className="text-gray-400">Años de Experiencia</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-500">277</div>
-                  <div className="text-gray-400">Proyectos Completados</div>
-                </div>
-              </div> */}
+              <div className="flex items-center space-x-6">
+                <a 
+                  href="https://www.linkedin.com/in/angie27manrique/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-purple-500 transition-colors"
+                >
+                  <Linkedin size={24} />
+                </a>
+                <a 
+                  href="https://github.com/angie27m" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-purple-500 transition-colors"
+                >
+                  <Github size={24} />
+                </a>
+                <a 
+                  href="https://x.com/i_Angie_" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-purple-500 transition-colors"
+                >
+                  <Twitter size={24} />
+                </a>
+                <a 
+                  href="https://instagram.com/angie27m" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-purple-500 transition-colors"
+                >
+                  <Instagram size={24} />
+                </a>
+              </div>
             </div>
           </div>
           

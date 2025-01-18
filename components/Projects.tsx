@@ -53,17 +53,26 @@ const projects: Project[] = [
     description:
       'Publiqué artículo de investigación analizando las disparidades de género en la educación superior colombiana en las Pruebas Saber 2016.',
     fullDescription: `Investigación exhaustiva sobre las disparidades de género en educación STEM:
-    • Análisis estadístico de datos de las Pruebas Saber 2016
+    • Análisis descriptivo y predictivo de datos de las Pruebas Saber 2016
     • Identificación de factores socioeconómicos influyentes
     • Propuesta de estrategias para reducir la brecha de género
     • Publicación en revista académica indexada`,
-    image: '/placeholder.svg?height=200&width=300',
+    image: '/Figura 7.png?height=200&width=300',
     gallery: [
-      '/images/stem-1.jpg',
-      '/images/stem-2.jpg',
-      '/images/stem-3.jpg',
+      '/stem02.png',
+      '/Figura 4.png',
+      '/Figura 5.png',
+      '/stem01.png',
+      '/Figura 8.jpg',
+      '/Figura 10.jpg',
+      '/Figura 12.jpg',
+      '/Figura 13.jpg',
+      '/Figura 14.jpg',
+      '/Figura 17.jpg',
+      '/Figura 18.jpg',
+      '/Figura 19.jpg',
     ],
-    technologies: ['R', 'Statistical Analysis', 'Data Visualization'],
+    technologies: ['Java', 'JSF', 'Machine Learning', 'Data Visualization', 'K-means', 'J48'],
     link: 'https://revistas.ucundinamarca.edu.co/index.php/Pensamiento_udecino/article/view/79',
   },
 ];
@@ -74,7 +83,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-12">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-8 text-center text-purple-500">Mis Proyectos</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center text-purple-500">Proyectos Destacados</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {projects.map((project, index) => (
             <Card key={index} className="bg-gray-900/50 border-gray-800 backdrop-blur-sm">
