@@ -6,12 +6,15 @@ export default function Hero() {
     <section className="py-20 md:py-32">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="flex-1 text-center lg:text-left">            
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="block">Desarrolladora </span>
-              <span className="block text-purple-500">de</span>
-              <span className="block">Software</span>
+          <div className="flex-1 text-center lg:text-left">   
+
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">
+              <span className="block text-purple-500">Angie Paola Manrique</span>
             </h1>
+
+            <h2 className="text-2xl md:text-4xl font-bold mb-6">
+              <span className="block text-gray-200">Desarrolladora de software</span>
+            </h2>
             
             <p className="text-gray-400 text-lg mb-8 max-w-2xl">
               Especializada en el desarrollo backend con Java y en la creación y mantenimiento de aplicaciones web eficientes y escalables
