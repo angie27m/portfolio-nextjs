@@ -1,7 +1,22 @@
 import Image from 'next/image'
-import { MessageCircle, Github, Linkedin, Instagram, Twitter } from 'lucide-react'
+import { Github, Linkedin, Instagram, Twitter } from 'lucide-react'
 
-export default function Hero() {
+interface HeroProps {
+  language: 'es' | 'en';
+}
+
+const heroContent = {
+  es: {
+    role: 'Desarrolladora de software',
+    description: 'Especializada en el desarrollo backend con Java y en la creación y mantenimiento de aplicaciones web eficientes y escalables'
+  },
+  en: {
+    role: 'Software Developer',
+    description: 'Specialized in backend development with Java and in creating and maintaining efficient and scalable web applications'
+  }
+}
+
+export default function Hero({ language }: HeroProps) {
   return (
     <section className="py-20 md:py-32">
       <div className="container mx-auto px-6">
@@ -13,11 +28,11 @@ export default function Hero() {
             </h1>
 
             <h2 className="text-2xl md:text-4xl font-bold mb-6">
-              <span className="block text-gray-200">Desarrolladora de software</span>
+              <span className="block text-gray-200">{heroContent[language].role}</span>
             </h2>
             
             <p className="text-gray-400 text-lg mb-8 max-w-2xl">
-              Especializada en el desarrollo backend con Java y en la creación y mantenimiento de aplicaciones web eficientes y escalables
+              {heroContent[language].description}
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">

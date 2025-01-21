@@ -18,6 +18,23 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+interface ProjectsProps {
+  language: 'es' | 'en';
+}
+
+const content = {
+  es: {
+    title: "Proyectos Destacados",
+    buttonText: "Ver más",
+    publicationText: "Ver Publicación",
+  },
+  en: {
+    title: "Featured Projects",
+    buttonText: "Learn More",
+    publicationText: "View Publication",
+  },
+};
+
 type Project = {
   title: string;
   description: string;
@@ -31,8 +48,7 @@ type Project = {
 const projects: Project[] = [
   {
     title: 'Acuaponic: Sistema de Detección de Peces',
-    description:
-      'Desarrollé un sistema inteligente utilizando webcam en tiempo real, MATLAB y Arduino para detectar especies de peces y predecir su longitud y porciones de alimento.',
+    description: 'Desarrollé un sistema inteligente utilizando webcam en tiempo real, MATLAB y Arduino para detectar especies de peces y predecir su longitud y porciones de alimento.',
     fullDescription: `Este proyecto innovador combina hardware y software para:
     • Detección en tiempo real de especies de peces mediante procesamiento de imágenes
     • Cálculo automático de porciones de alimento basado en el tamaño del pez
@@ -50,8 +66,7 @@ const projects: Project[] = [
   },
   {
     title: 'Brechas de Género en Carreras STEM',
-    description:
-      'Publiqué artículo de investigación analizando las disparidades de género en la educación superior colombiana en las Pruebas Saber 2016.',
+    description: 'Publiqué artículo de investigación analizando las disparidades de género en la educación superior colombiana en las Pruebas Saber 2016.',
     fullDescription: `Investigación exhaustiva sobre las disparidades de género en educación STEM:
     • Análisis descriptivo y predictivo de datos de las Pruebas Saber 2016
     • Identificación de factores socioeconómicos influyentes
@@ -77,13 +92,15 @@ const projects: Project[] = [
   },
 ];
 
-export default function Projects() {
+export default function Projects({ language }: ProjectsProps) {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
     <section id="projects" className="py-12">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-8 text-center text-purple-500">Proyectos Destacados</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center text-purple-500">
+          {content[language].title}
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {projects.map((project, index) => (
             <Card key={index} className="bg-gray-900/50 border-gray-800 backdrop-blur-sm">
@@ -104,7 +121,7 @@ export default function Projects() {
                   className="border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white"
                   onClick={() => setSelectedProject(project)}
                 >
-                  Ver más
+                  {content[language].buttonText}
                 </Button>
               </CardContent>
             </Card>
@@ -115,7 +132,9 @@ export default function Projects() {
           {selectedProject && (
             <DialogContent className="bg-gray-900/95 border border-gray-800 backdrop-blur-sm max-w-2xl h-[80vh] overflow-y-auto">
               <DialogHeader>
-                <DialogTitle className="text-2xl font-bold text-purple-500">{selectedProject.title}</DialogTitle>
+                <DialogTitle className="text-2xl font-bold text-purple-500">
+                  {selectedProject.title}
+                </DialogTitle>
               </DialogHeader>
               <div className="grid gap-4">
                 <div className="relative w-full">
@@ -140,7 +159,9 @@ export default function Projects() {
                   </Carousel>
                 </div>
                 <div className="space-y-4">
-                  <p className="text-gray-300 whitespace-pre-line text-base">{selectedProject.fullDescription}</p>
+                  <p className="text-gray-300 whitespace-pre-line text-base">
+                    {selectedProject.fullDescription}
+                  </p>
                   <div className="flex flex-wrap gap-2">
                     {selectedProject.technologies.map((tech, index) => (
                       <span 
@@ -158,7 +179,7 @@ export default function Projects() {
                       asChild
                     >
                       <a href={selectedProject.link} target="_blank" rel="noopener noreferrer">
-                        Ver Publicación
+                        {content[language].publicationText}
                       </a>
                     </Button>
                   )}
