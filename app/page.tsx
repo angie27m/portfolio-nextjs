@@ -10,7 +10,7 @@ import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
 export default function Home() {
-  const [language, setLanguage] = useState<'es' | 'en'>('es')
+  const [language, setLanguage] = useState<'es' | 'en'>('en')
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -25,9 +25,9 @@ export default function Home() {
           <Hero language={language} />
           <About language={language} />
           <Projects language={language} />
-          <Skills />
-          <Contact />
-          <Footer />
+          <Skills language={language} />
+          <Contact language={language} />
+          <Footer language={language} />
         </div>
       </div>
     </div>

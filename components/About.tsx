@@ -35,24 +35,24 @@ export default function About({ language }: AboutProps) {
           {language === 'es' ? 'Sobre Mí' : 'About Me'}
         </h2>
 
-        <div className="bg-gray-900/50 p-8 rounded-2xl backdrop-blur-sm">
-          <p className="text-lg mb-6 text-gray-300">
+        <div className="bg-gray-900/50 p-8 rounded-2xl backdrop-blur-sm max-w-4xl mx-auto">
+          <p className="text-lg mb-6 text-gray-300 px-4 md:px-8">
             {content[language].greeting}
           </p>
 
-          <p className="text-lg mb-6 text-gray-300">
+          <p className="text-lg mb-6 text-gray-300 px-4 md:px-8">
             {content[language].currentRole}
           </p>
 
-          <p className="text-lg mb-6 text-gray-300">
+          <p className="text-lg mb-6 text-gray-300 px-4 md:px-8">
             {content[language].previousRole}
           </p>
 
-          <p className="text-lg mb-6 text-gray-300">
+          <p className="text-lg mb-6 text-gray-300 px-4 md:px-8">
             {content[language].personal}
           </p>
 
-          <p className="text-lg text-gray-300">
+          <p className="text-lg text-gray-300 px-4 md:px-8">
             {content[language].linkedin.text}{' '}
             <a 
               href="https://www.linkedin.com/in/angie27manrique/" 
