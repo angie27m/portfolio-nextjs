@@ -1,6 +1,6 @@
-import type { Metadata } from 'next'
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import './globals.css'
+import type { Metadata } from 'next';
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Angie Manrique | Software Engineer',
@@ -12,16 +12,20 @@ export const metadata: Metadata = {
       { url: '/logo1.jpg', sizes: '48x48' },
     ],
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body>
+        {/* Speed Insights para recopilar métricas */}
+        <SpeedInsights />
+        {children}
+      </body>
     </html>
-  )
+  );
 }
