@@ -48,13 +48,14 @@ export default function Header({ language, setLanguage }: HeaderProps) {
           <Link href="#contact" className="text-gray-300 hover:text-white transition-colors">
             {navLinks[language].contact}
           </Link>
-          <button
-            onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
-            className="px-3 py-1 rounded-full border border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white transition-colors"
-          >
-            {language === 'es' ? 'EN' : 'ES'}
-          </button>
         </div>
+
+        <button
+          onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
+          className="px-3 py-1 rounded-full border border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white transition-colors"
+        >
+          {language === 'es' ? 'EN' : 'ES'}
+        </button>
       </nav>
     </header>
   )
