@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Github, Linkedin, Instagram, Twitter } from 'lucide-react'
+import { Github, Linkedin, Instagram } from 'lucide-react'
 
 interface HeroProps {
   language: 'es' | 'en';
@@ -8,11 +8,11 @@ interface HeroProps {
 const heroContent = {
   es: {
     role: 'Desarrolladora de software',
-    description: 'Especializada en el desarrollo backend con Java y en la creación y mantenimiento de aplicaciones web eficientes y escalables'
+    description: 'Especializada en desarrollo backend con Java, creando aplicaciones web eficientes y escalables'
   },
   en: {
     role: 'Software Developer',
-    description: 'Specialized in backend development with Java and in creating and maintaining efficient and scalable web applications'
+    description: 'Specialized in backend development with Java, building efficient and scalable web applications'
   }
 }
 
@@ -52,14 +52,6 @@ export default function Hero({ language }: HeroProps) {
                   className="text-gray-400 hover:text-purple-500 transition-colors"
                 >
                   <Github size={24} />
-                </a>
-                <a 
-                  href="https://x.com/i_Angie_" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-purple-500 transition-colors"
-                >
-                  <Twitter size={24} />
                 </a>
                 <a 
                   href="https://instagram.com/angie27m" 
